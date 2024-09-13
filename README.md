@@ -1,6 +1,7 @@
 # Git_Comands
 # Configure Git with your username and email
 git config --global user.name "Your Name"
+
 git config --global user.email "youremail@example.com"
 # Initialize a new Git repository in your directory
 git init
@@ -85,12 +86,14 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 # Add the key to the ssh-agent
 eval "$(ssh-agent -s)"
+
 ssh-add ~/.ssh/id_rsa
 
 # Copy your SSH public key to GitHub
 cat ~/.ssh/id_rsa.pub
 
 git clone git@github.com:username/repo-name.git
+
 cd repo-name
 # Merge 3 sub branches to one main branch
 # Rename the branch
@@ -104,36 +107,46 @@ git checkout -b student1
 
 # Add Two Files in the student1 Branch
 echo "This is file1" > file1.txt
+
 echo "This is file2" > file2.txt
 
 # Add, commit, and push
 git add .
+
 git commit -m "Add file1 and file2 to student1 branch"
+
 git push -u origin student1
 
 # Create the studentinfo Branch
 git checkout student   # Switch back to the `student` branch
+
 git checkout -b studentinfo
 
 # Add Two Files in the studentinfo Branch
 echo "This is info1" > info1.txt
+
 echo "This is info2" > info2.txt
 
 # Add, commit, and push
 git add .
+
 git commit -m "Add info1 and info2 to studentinfo branch"
+
 git push -u origin studentinfo
 
 # Create the studentevent Branch
 git checkout student  # Switch back to the `student` branch
+
 git checkout -b studentevent
 
 # Add Two Files in the studentevent Branch
 echo "This is student_file1" > student_file1.txt
+
 echo "This is student_file2" > student_file2.txt
 
 # Add, commit, and push
 git add .
+
 git commit -m "Add student_file1 and student_file2 to student branch"
 
 git push -u origin studentevent
