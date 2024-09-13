@@ -92,7 +92,7 @@ cat ~/.ssh/id_rsa.pub
 
 git clone git@github.com:username/repo-name.git
 cd repo-name
-
+# Merge 3 sub branches to one main branch
 # Rename the branch
 git branch -M student
 
