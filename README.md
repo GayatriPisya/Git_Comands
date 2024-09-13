@@ -138,5 +138,8 @@ git commit -m "Add student_file1 and student_file2 to student branch"
 
 git push -u origin studentevent
 
+# Go to the main branch
+
+git checkout student 
 
 git push -u origin student
