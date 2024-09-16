@@ -1,7 +1,7 @@
 # Git_Comands
-# Configure Git with your username and email
+# Configure Git with your username 
 git config --global user.name "Your Name"
-
+# Configure Git with your  email
 git config --global user.email "youremail@example.com"
 # Initialize a new Git repository in your directory
 git init
